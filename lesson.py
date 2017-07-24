@@ -160,6 +160,8 @@ class opt:
 o = opt()
 o.MyName()
 
+# Можно писать так opt().MyName()
+
 class opt_2:
     def __init__(self,name,age):
         self.name = name
