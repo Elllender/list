@@ -70,6 +70,7 @@ names = 'leha', 'pavel', 'anton'
 # for
 for name in names:
     print(name)
+# Выведет поочереди каждое имя в именах. 
 
 # while
 
