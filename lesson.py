@@ -147,4 +147,19 @@ for f in find:
 
 Настал момент для ООП ( Обьектно-Ориентированный-Язык программирования).
 
-class run:
+class opt:
+    def MyName(self):
+        print('My name is Dasha !')
+
+o = opt()
+o.MyName()
+
+class opt_2:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def person_info(self):
+        print ('My name is '+self.age+', and me '+str(self.age)+'year :)')
+
+o = opt_2('Alex',17)
+o.person_info()
