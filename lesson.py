@@ -155,15 +155,15 @@ for f in find:
 
 class opt: создание обьекта (класс)
     def MyName(self): создание функции которая тоже обьект и принимает self обязательно.
-        print('My name is Dasha !')
+        print('My name is Dasha !') # Вывод чего либо
 
-o = opt()
-o.MyName()
+o = opt() # Присвоение переменной opt(). ОБЬЕКТ.
+o.MyName() # Выполняем функцию в обьекте (вызываем).
 
 # Можно писать так opt().MyName()
 
 class opt_2:
-    def __init__(self,name,age):
+    def __init__(self,name,age): # инитиализируящая функция .
         self.name = name
         self.age = age
     def person_info(self):
@@ -171,3 +171,5 @@ class opt_2:
 
 o = opt_2('Alex',17)
 o.person_info()
+
+# С этим разобрались !
