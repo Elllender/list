@@ -119,26 +119,28 @@ for f in find:
 # print ('--'*34)
 
 # Перечесляю модули которыми больше всего пользуюсь.
-# urllib
-# random
-# argparse
-# sys
-# requests
-# time
-# datetime
-# matplotlib
-# socket
-# os
-# subprocess
-# math
-# json
-# ast
-# smtplib
-# base64
-# urllib2
-# hashlib
-# threading
-# PyQt5
-# calendar
-# struct
-# pprint
+# urllib - Работа с http и https протоколами .
+# random - Генерация рандомных чисел .
+# argparse - Создание аргументов .
+# sys - Системный можуль . Для закрытия процесса и т.д
+# requests - Работа тоже с http, https протоколоами .
+# time - Работа со временем .
+# datetime - Тоже со временем но удобнее и лучше . Настоящее время .
+# matplotlib - Работа с графиками .
+# socket - 
+# os - Работа с процессами и т.д .
+# subprocess - Работа с процессами .
+# math - Математическая библиотека .
+# json - Работа со списками в формате json .
+# ast - Использую для преобразования из string в dict и т.д .
+# smtplib Работа с smtp протоколом (почта). Старое pop3 .
+# base64 - Шифрование base64.
+# urllib2 - Работа с http, https протоколоми, но более сложна и детальна.
+# hashlib - Всякие методы шифрования (md5, sha1) и т.д .
+# threading - Одновременное выполнение одной функции.
+# PyQt5 - Графическая оболочка .
+# calendar - Обычный календарик .
+# struct - IN/OUT Encrypt Decrypt .
+# pprint - Просто для красивого вывода .
+# numpy - Работа с массивами и много другого.
+# scipy - Предназначена для математических вычислений .
