@@ -153,8 +153,8 @@ for f in find:
 
 Настал момент для ООП ( Обьектно-Ориентированный-Язык программирования).
 
-class opt:
-    def MyName(self):
+class opt: создание обьекта (класс)
+    def MyName(self): создание функции которая тоже обьект и принимает self обязательно.
         print('My name is Dasha !')
 
 o = opt()
