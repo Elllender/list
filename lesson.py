@@ -87,12 +87,18 @@ def name_function(num,num_2):  # Принимает значения
     return num + num_2  # Возвращает сумму num и num_2
 print(name_function(1, 20))
 
-# Разные штуки !
+# Разные штуки с текстом !
 text = 'Ala Beaa Huh'
 split_text = text.split(' ') # rsplit ::: "Режет"
 print(split_text)
 replace_text = text.replace('A', 'H') # Заменяет
 print(replace_text)
+text.encode("utf-16") # Кодирования в utf-16 из utf-8 .deocode Декодирование.
+print(text)
+u_text = text.upper() # Приводит все к верхнему регистру !
+l_text = text.lower() # Приводит все к нижнему регистру ! 
+print(u_text)
+print(l_text)
 # И т.д
 
 # Про ООП потом !
