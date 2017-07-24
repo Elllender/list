@@ -102,3 +102,16 @@ print(l_text)
 # И т.д
 
 # Про ООП потом !
+
+# Давай напишем простой скрипт для получения html разметки с сайта грубо говоря  и выведем то что находится между тэгами <title>awdawd</title>
+
+from urllib.request import Request,urlopen
+from re import findall # Можно с помощью BS
+url = "http://spaces.ru/"
+headers = {"User-Agent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"}
+Req = Request(url=url,headers=headers)
+htmltext = urlopen(Req).read().decode()
+find = findall(r'<title>(.*?)</title>',htmltext)
+for f in find:
+        print(f)
+# Все проще простого дальше некуда ...............
