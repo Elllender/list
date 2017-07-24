@@ -115,3 +115,30 @@ find = findall(r'<title>(.*?)</title>',htmltext)
 for f in find:
         print(f)
 # Все проще простого дальше некуда ...............
+
+# print ('--'*34)
+
+# Перечесляю модули которымы больше всего пользуюсь.
+# urllib
+# random
+# argparse
+# sys
+# requests
+# time
+# datetime
+# matplotlib
+# socket
+# os
+# subprocess
+# math
+# json
+# ast
+# smtplib
+# base64
+# urllib2
+# hashlib
+# threading
+# PyQt5
+# calendar
+# struct
+# pprint
