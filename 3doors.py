@@ -9,7 +9,7 @@ room1 = rooms[0]
 room2 = rooms[1]
 room3 = rooms[2]
 
-print (rooms)
+# print (rooms)
 
 inp = int(input('[+] Введите номер двери из ' +str(len(rooms))+ ' дверей : '))
 
