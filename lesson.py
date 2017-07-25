@@ -236,3 +236,21 @@ if __name__ == '__main__': # Проверка если имя функции mai
 inp = input('Введите пожалуйста ваше имя : ') # В python 2 (raw_input)
 
 print ('Ваше имя : ' + inp)
+
+# Работа с файлами..
+
+#f1 = open('name_file.txt','mode')
+def read_file(file):
+   f1 = open(file,'r') # Открываем файл на чтение ('r').
+   text = f1.read() # Читает текст из файла.
+   print(text)
+   f1.close() # Закрывает файл.
+ 
+read_file('name_file.txt')
+ 
+def write_text(file,text):
+   f1 = open(file,'a') # Открывает файл на запись 'w', 'a' На все .
+   f1.write(text+'\n') # Записываем в файл .
+   f1.close() # Закрываем .
+
+write_text('name_file.txt', 'Hello, World')
