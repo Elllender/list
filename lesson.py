@@ -74,6 +74,9 @@ names = 'leha', 'pavel', 'anton'
 for name in names:
     print(name)
 # Выведет поочереди каждое имя в именах.
+for n in range(0,1000): # xrange(1000)
+   print(n)
+# Логично выведет все числа попорядку от 0 до 1000
 
 # while
 
