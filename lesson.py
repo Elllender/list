@@ -254,3 +254,27 @@ def write_text(file,text):
    f1.close() # Закрываем .
 
 write_text('name_file.txt', 'Hello, World')
+
+# Посчитаем сколько високосных годов было c 0 года в Юлианском календаре. Напишем грамотно .
+
+from sys import exit
+from datetime import date
+
+def get_yevi(i,mas,year):
+    while i < year:
+      mas.append(i)
+      i += 4
+     return(len(mas))
+     
+i = 0
+mas = []
+year = date.today().year # Получаем сейчашний год.
+
+number = get_yevi(i,mas,year) 
+print(number)
+
+exit(1)
+
+# Проще некуда !
+
+# 505 
