@@ -278,3 +278,15 @@ exit(1)
 # Проще некуда !
 
 # 505 
+
+# Теперь мы можем использовать это как наш модуль !
+
+from year import get_yevi # Импорт нашего модуля .
+
+i = 0
+mas = []
+year = date.today().year
+
+number = get_yevi(i,mas,year) 
+print(number)
+
