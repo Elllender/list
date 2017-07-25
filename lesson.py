@@ -39,6 +39,7 @@ print(array[1])  # Что выведет ?
 print(array[2])  # Что выведет ?
 print(array[-1]) # Что выведет ?
 print(array[1::4])  # Что выведет ?
+print(array[2:4]) # Что выведет ?
 array.append(555) # Добовляем в массив число 555 !
 print(array) # Что выведет ?
 
