@@ -290,3 +290,5 @@ year = date.today().year
 number = get_yevi(i,mas,year) 
 print(number)
 
+# Вот написал сегодня игру в отгадывания дверей как играли с вами :)
+# https://github.com/Elllender/list/blob/master/3doors.py
