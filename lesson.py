@@ -148,14 +148,14 @@ print(l_text)
 
 # Давай напишем простой скрипт для получения html разметки с сайта грубо говоря  и выведем то что находится между тэгами <title>awdawd</title>
 
-from urllib.request import Request,urlopen
-from re import findall # Можно с помощью BS
-url = "http://spaces.ru/"
-headers = {"User-Agent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"}
-Req = Request(url=url,headers=headers)
-htmltext = urlopen(Req).read().decode()
-find = findall(r'<title>(.*?)</title>',htmltext)
-for f in find:
+from urllib.request import Request,urlopen # импортируем 2 модуля
+from re import findall # Можно с помощью BS # импортируем 1 модуль
+url = "http://spaces.ru/" # надеюсь ясно
+headers = {"User-Agent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"} # User-Agent 
+Req = Request(url=url,headers=headers) # Добавляет в запрос заголовок User-Agent
+htmltext = urlopen(Req).read().decode() # Открываем получаем и декодируем текст в utf-8 по стандарту
+find = findall(r'<title>(.*?)</title>',htmltext) # ищем текст между двумя тэгами в htmltext
+for f in find: # для каждой f в find принтуем f
         print(f)
 # Все проще простого дальше некуда ...............
 
