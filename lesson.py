@@ -101,7 +101,7 @@ else:
 # <= - Меньше или равно,
 # > - Больше,
 # < - Меньше.
-# Существуют еще and, or .
+# Существуют еще and, or, not.
 
 if name or name_2 == 'Henry':
 # Если им или имя 2 равно генри то выполняем то что ниже 
@@ -109,6 +109,9 @@ if name or name_2 == 'Henry':
 if name and name_2 == 'Lola','Emma':
 # Если имя и имя 2 равны Лола и Эмма то выполняем то что ниже
     print(name+' : '+name_2)
+if 'Amanda' not in name:
+# Если Amanda нет в name то выполняем код ниже :)
+    print('Amanda not found')
 else: # В пративном случае ничего не делаем.
     pass # Кстати pass ничего не делает !
 
