@@ -1,9 +1,11 @@
 import sys
 from random import shuffle,choice
 
-rooms = ['', '', 'car']
+rooms = ['', '', 'car'] # Создание массива
 
-shuffle(rooms)
+shuffle(rooms) # Рандомно упорядочивает значения в массиве .
+
+# Присвоение переменным (дверям) значений массива.
 
 room1 = rooms[0]
 room2 = rooms[1]
@@ -11,7 +13,9 @@ room3 = rooms[2]
 
 # print (rooms)
 
-inp = int(input('[+] Введите номер двери из ' +str(len(rooms))+ ' дверей : '))
+inp = int(input('[+] Введите номер двери из ' +str(len(rooms))+ ' дверей : ')) # Говорит само за себя
+
+# Дальше идут сплошные условия ...
 
 if inp == 1:
     if room1 == '':
