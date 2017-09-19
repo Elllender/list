@@ -56,21 +56,21 @@ if status != 200:
  print('[+] STATUS CODE : '+str(status)+' : '+':( SORRY') # правельней ставить else .
  sys.exit() # завершаем процесс .
 ''' # комментарии
-while True:
- while n < len(mas)+1:
-    print '!!!!!!!!!!!!!!!!'+str(n)+'!!!!!!!!!!!!!!!!'+str(x)
-    req = requests.get(mas[n]+str(x))
-    text = req.content
-    find = re.findall(r'title="RU"></a>(.*?)</td>',text)
-    if len(find) > 0:
-       for line in find:
-         print str(line)
-         f = open('servers','a')
-         f.write(str(line)+'\n')
-       f.close()
-       x += 1
-       continue
-    if len(find) == 0:
-       x = 1
-       n += 1
-       continue
+while True: # цикл.
+ while n < len(mas)+1: # цикл.
+    print '!!!!!!!!!!!!!!!!'+str(n)+'!!!!!!!!!!!!!!!!'+str(x) # типо баннера
+    req = requests.get(mas[n]+str(x)) # запрос 
+    text = req.content # получаю содержимое ответа
+    find = re.findall(r'title="RU"></a>(.*?)</td>',text) # регулярное выражение
+    if len(find) > 0: # условие.если длина будет больше 0.
+       for line in find: # цикл
+         print str(line) # вывод длины строки line.
+         f = open('servers','a') # создаем файл с именем servers
+         f.write(str(line)+'\n') # записываем в файл текст .
+       f.close() # закрываем файл .
+       x += 1 # добавляем 1.
+       continue # продолжаем цикл
+    if len(find) == 0: # если длина равна 0 то делаем это.
+       x = 1 # присваиваем переменной 1
+       n += 1 # добавляем переменной n единичку.
+       continue # продолжаем цикл.
