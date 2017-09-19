@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import requests, re, sys
+import requests, re, sys # импорт библиотек 
 
 n = 0 # index list
 
 x = 1 # number page
 
 # list url 
-url2 = 'http://gamingservers.ru/minecraft/?page='
+url2 = 'http://gamingservers.ru/minecraft/?page=' #присвоение переменным значений.
 url3 = 'http://gamingservers.ru/css/?page='
 url4 = 'http://gamingservers.ru/cs1.6/?page='
 url5 = 'http://gamingservers.ru/sanandreas/?page='
@@ -41,21 +41,21 @@ url32 = 'http://gamingservers.ru/teamspeak3/?page='
 mas = [url2,url3,url4,url5,url6,url7,url8,url9,url10]
 mas += [url11,url12,url13,url14,url15,url16,url17,url18,url19]
 mas += [url20,url21,url22,url23,url24,url25,url26,url27,url28,url29]
-mas += [url30,url31,url32]
+mas += [url30,url31,url32] # добавление переменных в массив .
 # list url 
 '''
 banner= '* : PROGECT GAMINGSERVER.RU [LIST SERVER] : *'
 print(banner)
 url = 'http://gamingservers.ru'
-req = requests.get(url)
-print '='*len(banner)
-status = req.status_code
-if status == 200:
+req = requests.get(url) # отправка get запроса.
+print '='*len(banner) # выводит длину переменной.
+status = req.status_code # получаем код.(ответ).
+if status == 200: # сверяем с 200
   print('[+] STATUS CODE : '+str(status)+' : '+'IT ALL OK')
 if status != 200:
- print('[+] STATUS CODE : '+str(status)+' : '+':( SORRY')
- sys.exit()
-'''
+ print('[+] STATUS CODE : '+str(status)+' : '+':( SORRY') # правельней ставить else .
+ sys.exit() # завершаем процесс .
+''' # комментарии
 while True:
  while n < len(mas)+1:
     print '!!!!!!!!!!!!!!!!'+str(n)+'!!!!!!!!!!!!!!!!'+str(x)
